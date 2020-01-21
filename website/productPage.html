@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style_product.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/transloTransparent.png" id="logo"></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarText">
+               <ul class="navbar-nav mr-auto">
+                   
+               </ul>
+               <span class="navbar-text">
+            <a href="specifications.html"><button  class="btn btn-outline-light my-2 my-sm-0" type="submit">Specs</button></a>
+           <a href="productPage.html"><button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buy</button></a>
+           </span>
+           </div>
+       </nav>
+       
+<main class="container">
+   
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column">
+        <br>
+        <br>
+        <img src="img/iconx.png" class="active" id="transloImage" alt="pic of black version of translo">
+    </div>
+
+
+    <!-- Right Column -->
+    <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+            <span>Headsets</span>
+            <h1>Translo </h1>
+            <p>The perfect headset for almost all scenarios. It has a superb built-in translate system and has some of the best sound out of its competition. Headset is also up to scratch with newest Bluetooth Version, and futuristic looks.</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+            <!-- Product Color -->
+            <div class="product-color">
+                <span>Color</span>
+
+                <div class="color-choose">
+                    <div>
+                        <input  type="radio" id="black" name="color" value="black"  checked onclick="document.getElementById('transloImage').src='img/iconx.png'">
+                        <label for="black"><span></span></label>
+                    </div>
+                    <div>
+                        <input  type="radio" id="white" name="color" value="white" onclick="document.getElementById('transloImage').src='img/iconx_white.png'">
+                        <label for="white"><span></span></label>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+            <span>£ 240.00</span>
+            <a href="orderPage.html" class="cart-btn">Order</a>
+        </div>
+        <div class="product-specifications">
+            <br>
+            <br>
+            <h3>Technical Details:</h3>
+            <table class="table table-striped">
+                <thead>
+                    <th>Feature</th>
+                    <th>Specifications</th>
+                </thead>
+                <tr>
+                    <th>Product-Typ</th>
+                  
+                   
+                    <td>Wireless Earphone</td>
+                </tr>
+                <tr>
+                    <th>Carrying Type</th>
+                    
+                    <td>In-Ear</td>
+                </tr>
+                <tr>
+                    <th>Bluetooth</th>
+                    
+                    <td>ver 5.1</td>
+                </tr>
+                <tr>
+                    <th>Charging Type</th>
+                    
+                    <td>Micro-USB/Wireless</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+ 
+</main>
+
+
+
+
+</body>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-12">
+                <hr class="dark">
+                <h4>© 2020 Translo Ltd.</h4>
+            </div>
+        </div>
+    </div>
+    
+  </footer>
+</html>
